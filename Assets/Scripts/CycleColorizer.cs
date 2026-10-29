@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class CycleColorizer : MonoBehaviour
 {
-    [SerializeField] private Color _color = new(3, 2, 3);
+    [SerializeField] private Color _color = Color.cyan;
     [SerializeField] private float _duration = 2;
 
     private MeshRenderer _renderer;
