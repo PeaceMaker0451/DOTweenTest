@@ -8,6 +8,6 @@ public class CycleMover : MonoBehaviour
     
     void Start()
     {
-       transform.DOMove(_move, _duration).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
+       transform.DOMove(transform.position + _move, _duration).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).Play();
     }
 }
